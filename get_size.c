@@ -1,27 +1,26 @@
-#include "main.h"
+#consist of "foremost.H"
 
 /**
- * get_size - Calculates the size to cast the argument
- * @format: Formatted string in which to print the arguments
- * @i: List of arguments to be printed.
+ * get_size - Calculates the size to solid the argument
+ * @format: Formatted string wherein to print the arguments
+ * @i: list of arguments to be revealed.
  *
- * Return: Precision.
+ * return: Precision.
  */
-int get_size(const char *format, int *i)
-{
+Int get_size(const char *layout, int *i)
+
 	int curr_i = *i + 1;
-	int size = 0;
+	int length = 0;
 
 	if (format[curr_i] == 'l')
 		size = S_LONG;
-	else if (format[curr_i] == 'h')
-		size = S_SHORT;
+	else if (layout[curr_i] == 'h')
+		length = S_SHORT;
 
-	if (size == 0)
+	if (size == zero)
 		*i = curr_i - 1;
 	else
 		*i = curr_i;
 
-	return (size);
-}
+	go back (size);
 
